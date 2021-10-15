@@ -1,0 +1,51 @@
+# github.com/btcsuite/btcutil v0.0.0-20190425235716-9e5f4b9a998d
+github.com/btcsuite/btcutil/bech32
+# github.com/cosmos/amino-js/go/lib v0.0.0 => ../lib
+github.com/cosmos/amino-js/go/lib
+github.com/cosmos/amino-js/go/lib/cosmos/cosmos-sdk/crypto
+github.com/cosmos/amino-js/go/lib/cosmos/cosmos-sdk/crypto/keys
+github.com/cosmos/amino-js/go/lib/cosmos/cosmos-sdk/crypto/keys/hd
+github.com/cosmos/amino-js/go/lib/cosmos/cosmos-sdk/store/rootmulti
+github.com/cosmos/amino-js/go/lib/cosmos/cosmos-sdk/store/types
+github.com/cosmos/amino-js/go/lib/cosmos/cosmos-sdk/types
+github.com/cosmos/amino-js/go/lib/cosmos/cosmos-sdk/x/auth
+github.com/cosmos/amino-js/go/lib/cosmos/cosmos-sdk/x/bank
+github.com/cosmos/amino-js/go/lib/cosmos/cosmos-sdk/x/crisis
+github.com/cosmos/amino-js/go/lib/cosmos/cosmos-sdk/x/distribution/types
+github.com/cosmos/amino-js/go/lib/cosmos/cosmos-sdk/x/gov/types
+github.com/cosmos/amino-js/go/lib/cosmos/cosmos-sdk/x/ibc
+github.com/cosmos/amino-js/go/lib/cosmos/cosmos-sdk/x/params/types
+github.com/cosmos/amino-js/go/lib/cosmos/cosmos-sdk/x/slashing
+github.com/cosmos/amino-js/go/lib/cosmos/cosmos-sdk/x/staking/types
+github.com/cosmos/amino-js/go/lib/tendermint/iavl
+github.com/cosmos/amino-js/go/lib/tendermint/tendermint/abci/types
+github.com/cosmos/amino-js/go/lib/tendermint/tendermint/blockchain
+github.com/cosmos/amino-js/go/lib/tendermint/tendermint/consensus
+github.com/cosmos/amino-js/go/lib/tendermint/tendermint/consensus/types
+github.com/cosmos/amino-js/go/lib/tendermint/tendermint/crypto
+github.com/cosmos/amino-js/go/lib/tendermint/tendermint/crypto/ed25519
+github.com/cosmos/amino-js/go/lib/tendermint/tendermint/crypto/encoding/amino
+github.com/cosmos/amino-js/go/lib/tendermint/tendermint/crypto/merkle
+github.com/cosmos/amino-js/go/lib/tendermint/tendermint/crypto/multisig
+github.com/cosmos/amino-js/go/lib/tendermint/tendermint/crypto/multisig/bitarray
+github.com/cosmos/amino-js/go/lib/tendermint/tendermint/crypto/secp256k1
+github.com/cosmos/amino-js/go/lib/tendermint/tendermint/evidence
+github.com/cosmos/amino-js/go/lib/tendermint/tendermint/libs/bech32
+github.com/cosmos/amino-js/go/lib/tendermint/tendermint/libs/common
+github.com/cosmos/amino-js/go/lib/tendermint/tendermint/mempool
+github.com/cosmos/amino-js/go/lib/tendermint/tendermint/p2p
+github.com/cosmos/amino-js/go/lib/tendermint/tendermint/p2p/conn
+github.com/cosmos/amino-js/go/lib/tendermint/tendermint/p2p/pex
+github.com/cosmos/amino-js/go/lib/tendermint/tendermint/privval
+github.com/cosmos/amino-js/go/lib/tendermint/tendermint/types
+github.com/cosmos/amino-js/go/lib/tendermint/tendermint/version
+# github.com/cosmos/amino-js/go/src v0.0.0 => ../src
+github.com/cosmos/amino-js/go/src
+# github.com/davecgh/go-spew v1.1.1
+github.com/davecgh/go-spew/spew
+# github.com/gopherjs/gopherjs v0.0.0-20190430165422-3e4dfb77656c
+github.com/gopherjs/gopherjs/js
+# github.com/pkg/errors v0.8.1
+github.com/pkg/errors
+# github.com/tendermint/go-amino v0.15.0
+github.com/tendermint/go-amino

@@ -1,8 +1,9 @@
 package src
 
 import (
-	"github.com/cosmos/amino-js/go/lib"
-	"github.com/tendermint/go-amino"
+	// "github.com/cosmos/amino-js/go/lib"
+	"../lib"
+ amino	"github.com/tendermint/go-amino"
 )
 
 var codec *amino.Codec

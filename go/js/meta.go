@@ -1,8 +1,9 @@
 package main
 
 import (
-	"github.com/cosmos/amino-js/go/src"
-	"github.com/tendermint/go-amino"
+	// "github.com/cosmos/amino-js/go/src"
+	"../src"
+ amino	"github.com/tendermint/go-amino"
 )
 
 func DecodeDisambPrefixBytes(bz []byte) (db amino.DisambBytes, hasDb bool, pb amino.PrefixBytes, hasPb bool, n int) {

@@ -1,9 +1,88 @@
 package main
 
 import (
-	"github.com/cosmos/amino-js/go/src"
+	
+	// "github.com/cosmos/amino-js/go/src"
+	"../src"
 )
+//register
+func DecodeMsgCreateResourceNode(bz []byte, lengthPrefixed bool) (bz2 []byte) {
+	bz2, err := src.DecodeMsgCreateResourceNode(bz, lengthPrefixed)
+	if err != nil {
+		panic(err)
+	}
+	return
+}
+func DecodeMsgRemoveResourceNode(bz []byte, lengthPrefixed bool) (bz2 []byte) {
+	bz2, err := src.DecodeMsgRemoveResourceNode(bz, lengthPrefixed)
+	if err != nil {
+		panic(err)
+	}
+	return
+}
+func DecodeMsgCreateIndexingNode(bz []byte, lengthPrefixed bool) (bz2 []byte) {
+	bz2, err := src.DecodeMsgCreateIndexingNode(bz, lengthPrefixed)
+	if err != nil {
+		panic(err)
+	}
+	return
+}
+func DecodeMsgRemoveIndexingNode(bz []byte, lengthPrefixed bool) (bz2 []byte) {
+	bz2, err := src.DecodeMsgRemoveIndexingNode(bz, lengthPrefixed)
+	if err != nil {
+		panic(err)
+	}
+	return
+}
+func DecodeMsgIndexingNodeRegistrationVote(bz []byte, lengthPrefixed bool) (bz2 []byte) {
+	bz2, err := src.DecodeMsgIndexingNodeRegistrationVote(bz, lengthPrefixed)
+	if err != nil {
+		panic(err)
+	}
+	return
+}
 
+//pot
+func DecodeMsgVolumeReport(bz []byte, lengthPrefixed bool) (bz2 []byte) {
+	bz2, err := src.DecodeMsgVolumeReport(bz, lengthPrefixed)
+	if err != nil {
+		panic(err)
+	}
+	return
+}
+func DecodeMsgWithdraw(bz []byte, lengthPrefixed bool) (bz2 []byte) {
+	bz2, err := src.DecodeMsgWithdraw(bz, lengthPrefixed)
+	if err != nil {
+		panic(err)
+	}
+	return
+}
+func DecodeMsgFoundationDeposit(bz []byte, lengthPrefixed bool) (bz2 []byte) {
+	bz2, err := src.DecodeMsgFoundationDeposit(bz, lengthPrefixed)
+	if err != nil {
+		panic(err)
+	}
+	return
+}
+//sds
+func DecodeMsgFileUpload(bz []byte, lengthPrefixed bool) (bz2 []byte) {
+	bz2, err := src.DecodeMsgFileUpload(bz, lengthPrefixed)
+	if err != nil {
+		panic(err)
+	}
+	return
+}
+func DecodeMsgPrepay(bz []byte, lengthPrefixed bool) (bz2 []byte) {
+	bz2, err := src.DecodeMsgPrepay(bz, lengthPrefixed)
+	if err != nil {
+		panic(err)
+	}
+	return
+}
+
+
+
+///////////////////////////////////////////////////
 func DecodeMultiStoreProofOp(bz []byte, lengthPrefixed bool) (bz2 []byte) {
 	bz2, err := src.DecodeMultiStoreProofOp(bz, lengthPrefixed)
 	if err != nil {

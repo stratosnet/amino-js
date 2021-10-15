@@ -1,7 +1,7 @@
 package src
 
 import (
-	"github.com/tendermint/go-amino"
+ amino	"github.com/tendermint/go-amino"
 )
 
 // @formatter:off

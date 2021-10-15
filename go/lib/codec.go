@@ -32,9 +32,17 @@ import (
 	tm_types "github.com/cosmos/amino-js/go/lib/tendermint/tendermint/types"
 
 	amino "github.com/tendermint/go-amino"
+	//
+	sds "./cosmos/cosmos-sdk/x/sds"
+	pot "./cosmos/cosmos-sdk/x/pot"
+	register "./cosmos/cosmos-sdk/x/register"
 )
 
 func RegisterCodec(codec *amino.Codec) {
+
+   
+
+	/////////////////////////////////////////////////////////
 	// @formatter:off
 	// cosmos/cosmos-sdk/crypto/amino.go
 
@@ -69,6 +77,23 @@ func RegisterCodec(codec *amino.Codec) {
 
 	codec.RegisterConcrete(bank.MsgSend{},      CosmosSdkMsgSend, nil)
 	codec.RegisterConcrete(bank.MsgMultiSend{}, CosmosSdkMsgMultiSend, nil)
+	
+    //sds
+    codec.RegisterConcrete(sds.MsgFileUpload{}, CosmosSdkMsgFileUpload, nil)
+    codec.RegisterConcrete(sds.MsgPrepay{}, CosmosSdkMsgPrepay, nil)
+
+    //pot
+    codec.RegisterConcrete(pot.MsgVolumeReport{}, CosmosSdkMsgVolumeReport, nil)
+	codec.RegisterConcrete(pot.MsgWithdraw{}, CosmosSdkMsgWithdraw, nil)
+	codec.RegisterConcrete(pot.MsgFoundationDeposit{}, CosmosSdkMsgFoundationDeposit, nil)
+
+	//register
+    codec.RegisterConcrete(register.MsgCreateResourceNode{}, CosmosSdkMsgCreateResourceNode, nil)
+	codec.RegisterConcrete(register.MsgRemoveResourceNode{}, CosmosSdkMsgRemoveResourceNode, nil)
+	codec.RegisterConcrete(register.MsgCreateIndexingNode{}, CosmosSdkMsgCreateIndexingNode, nil)
+	codec.RegisterConcrete(register.MsgRemoveIndexingNode{}, CosmosSdkMsgRemoveIndexingNode, nil)
+	codec.RegisterConcrete(register.MsgIndexingNodeRegistrationVote{}, CosmosSdkMsgIndexingNodeRegistrationVote, nil)
+	
 
 	// cosmos/cosmos-sdk/x/crisis/codec.go
 

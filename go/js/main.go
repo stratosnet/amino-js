@@ -57,6 +57,33 @@ func main() {
 	exports.Set("uvarintSize",             UvarintSize)
 	exports.Set("varintSize",              VarintSize)
 
+	///////////////////////////////
+
+	exports.Set("encodeMsgVolumeReport",                EncodeMsgVolumeReport)
+	exports.Set("encodeMsgWithdraw",                    EncodeMsgWithdraw)
+	exports.Set("encodeMsgFileUpload",                  EncodeMsgFileUpload)
+	exports.Set("encodeMsgPrepay",                      EncodeMsgPrepay)
+	exports.Set("encodeMsgFoundationDeposit",           EncodeMsgFoundationDeposit)
+
+	exports.Set("encodeMsgCreateResourceNode",          EncodeMsgCreateResourceNode)
+	exports.Set("encodeMsgRemoveResourceNode",          EncodeMsgRemoveResourceNode)
+	exports.Set("encodeMsgCreateIndexingNode",          EncodeMsgCreateIndexingNode)
+	exports.Set("encodeMsgRemoveIndexingNode",          EncodeMsgRemoveIndexingNode)
+	exports.Set("encodeMsgIndexingNodeRegistrationVote",  EncodeMsgIndexingNodeRegistrationVote)
+
+	exports.Set("decodeMsgVolumeReport",                DecodeMsgVolumeReport)
+	exports.Set("decodeMsgWithdraw",                    DecodeMsgWithdraw)
+	exports.Set("decodeMsgFileUpload",                  DecodeMsgFileUpload)
+	exports.Set("decodeMsgPrepay",                      DecodeMsgPrepay)
+	exports.Set("decodeMsgFoundationDeposit",           DecodeMsgFoundationDeposit)
+
+	exports.Set("decodeMsgCreateResourceNode",          DecodeMsgCreateResourceNode)
+	exports.Set("decodeMsgRemoveResourceNode",          DecodeMsgRemoveResourceNode)
+	exports.Set("decodeMsgCreateIndexingNode",          DecodeMsgCreateIndexingNode)
+	exports.Set("decodeMsgRemoveIndexingNode",          DecodeMsgRemoveIndexingNode)
+	exports.Set("decodeMsgIndexingNodeRegistrationVote",  DecodeMsgIndexingNodeRegistrationVote)
+
+	//////////////////////////////
 	// Typed encoding
 	exports.Set("encodeMultiStoreProofOp",              EncodeMultiStoreProofOp)
 	exports.Set("encodeIAVLAbsenceOp",                  EncodeIAVLAbsenceOp)
