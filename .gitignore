@@ -1,2 +1,6 @@
 dist/
 types/
+node_modules/
+go/js/vendor
+go/lib/vendor
+go/src/vendor
