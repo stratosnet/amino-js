@@ -1,17 +1,31 @@
 package lib
 
 const (
+	CosmosSdkMsgFileUpload                       = "sds/MsgFileUpload"
+	CosmosSdkMsgPrepay                           = "sds/MsgPrepay"
+	CosmosSdkMsgVolumeReport                     = "pot/MsgVolumeReport"
+	CosmosSdkMsgWithdraw                         = "pot/MsgWithdraw"
+	CosmosSdkMsgFoundationDeposit                = "pot/MsgFoundationDeposit"
+
+	CosmosSdkMsgCreateResourceNode               = "register/MsgCreateResourceNode"
+	CosmosSdkMsgRemoveResourceNode               = "register/MsgRemoveResourceNode"
+	CosmosSdkMsgCreateIndexingNode               = "register/MsgCreateIndexingNode"
+	CosmosSdkMsgRemoveIndexingNode               = "register/MsgRemoveIndexingNode"
+	CosmosSdkMsgIndexingNodeRegistrationVote     = "register/MsgIndexingNodeRegistrationVote"
+
+
+	//////////////////
 	TendermintPrivKeyLedgerSecp256k1             = "tendermint/PrivKeyLedgerSecp256k1"
 	CryptoKeysHdBIP44Params                      = "crypto/keys/hd/BIP44Params"
 	CryptoKeysLocalInfo                          = "crypto/keys/localInfo"
 	CryptoKeysLedgerInfo                         = "crypto/keys/ledgerInfo"
 	CryptoKeysOfflineInfo                        = "crypto/keys/offlineInfo"
 	CryptoKeysMultiInfo                          = "crypto/keys/multiInfo"
-	AuthAccount                                  = "auth/Account"
-	AuthBaseVestingAccount                       = "auth/BaseVestingAccount"
-	AuthContinuousVestingAccount                 = "auth/ContinuousVestingAccount"
-	AuthDelayedVestingAccount                    = "auth/DelayedVestingAccount"
-	AuthStdTx                                    = "auth/StdTx"
+	AuthAccount                                  = "cosmos-sdk/Account"
+	AuthBaseVestingAccount                       = "cosmos-sdk/BaseVestingAccount"
+	AuthContinuousVestingAccount                 = "cosmos-sdk/ContinuousVestingAccount"
+	AuthDelayedVestingAccount                    = "cosmos-sdk/DelayedVestingAccount"
+	AuthStdTx                                    = "cosmos-sdk/StdTx"
 	CosmosSdkBaseAccount                         = "cosmos-sdk/BaseAccount"
 	CosmosSdkBaseVestingAccount                  = "cosmos-sdk/BaseVestingAccount"
 	CosmosSdkContinuousVestingAccount            = "cosmos-sdk/ContinuousVestingAccount"

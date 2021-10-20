@@ -33,8 +33,219 @@ import (
 	tm_pex "github.com/cosmos/amino-js/go/lib/tendermint/tendermint/p2p/pex"
 	tm_privval "github.com/cosmos/amino-js/go/lib/tendermint/tendermint/privval"
 	tm_types "github.com/cosmos/amino-js/go/lib/tendermint/tendermint/types"
-)
 
+	
+   //
+   sds "github.com/cosmos/amino-js/go/lib/cosmos/cosmos-sdk/x/sds"
+   pot "github.com/cosmos/amino-js/go/lib/cosmos/cosmos-sdk/x/pot"
+   register "github.com/cosmos/amino-js/go/lib/cosmos/cosmos-sdk/x/register"
+)
+//register
+func EncodeMsgCreateResourceNode(bz []byte, lengthPrefixed bool) (bz2 []byte, err error) {
+	var o register.MsgCreateResourceNode
+	err = codec.UnmarshalJSON(bz, &o)
+	if err != nil {
+		return nil, err
+	}
+
+	if lengthPrefixed {
+		bz2, err = codec.MarshalBinaryLengthPrefixed(o)
+	} else {
+		bz2, err = codec.MarshalBinaryBare(o)
+	}
+
+	if err != nil {
+		return nil, err
+	}
+
+	return
+}
+func EncodeMsgRemoveResourceNode(bz []byte, lengthPrefixed bool) (bz2 []byte, err error) {
+	var o register.MsgRemoveResourceNode
+	err = codec.UnmarshalJSON(bz, &o)
+	if err != nil {
+		return nil, err
+	}
+
+	if lengthPrefixed {
+		bz2, err = codec.MarshalBinaryLengthPrefixed(o)
+	} else {
+		bz2, err = codec.MarshalBinaryBare(o)
+	}
+
+	if err != nil {
+		return nil, err
+	}
+
+	return
+}
+func EncodeMsgCreateIndexingNode(bz []byte, lengthPrefixed bool) (bz2 []byte, err error) {
+	var o register.MsgCreateIndexingNode
+	err = codec.UnmarshalJSON(bz, &o)
+	if err != nil {
+		return nil, err
+	}
+
+	if lengthPrefixed {
+		bz2, err = codec.MarshalBinaryLengthPrefixed(o)
+	} else {
+		bz2, err = codec.MarshalBinaryBare(o)
+	}
+
+	if err != nil {
+		return nil, err
+	}
+
+	return
+}
+func EncodeMsgRemoveIndexingNode(bz []byte, lengthPrefixed bool) (bz2 []byte, err error) {
+	var o register.MsgRemoveIndexingNode
+	err = codec.UnmarshalJSON(bz, &o)
+	if err != nil {
+		return nil, err
+	}
+
+	if lengthPrefixed {
+		bz2, err = codec.MarshalBinaryLengthPrefixed(o)
+	} else {
+		bz2, err = codec.MarshalBinaryBare(o)
+	}
+
+	if err != nil {
+		return nil, err
+	}
+
+	return
+}
+func EncodeMsgIndexingNodeRegistrationVote(bz []byte, lengthPrefixed bool) (bz2 []byte, err error) {
+	var o register.MsgIndexingNodeRegistrationVote
+	err = codec.UnmarshalJSON(bz, &o)
+	if err != nil {
+		return nil, err
+	}
+
+	if lengthPrefixed {
+		bz2, err = codec.MarshalBinaryLengthPrefixed(o)
+	} else {
+		bz2, err = codec.MarshalBinaryBare(o)
+	}
+
+	if err != nil {
+		return nil, err
+	}
+
+	return
+}
+
+//pot
+func EncodeMsgVolumeReport(bz []byte, lengthPrefixed bool) (bz2 []byte, err error) {
+	var o pot.MsgVolumeReport
+	err = codec.UnmarshalJSON(bz, &o)
+	if err != nil {
+		return nil, err
+	}
+
+	if lengthPrefixed {
+		bz2, err = codec.MarshalBinaryLengthPrefixed(o)
+	} else {
+		bz2, err = codec.MarshalBinaryBare(o)
+	}
+
+	if err != nil {
+		return nil, err
+	}
+
+	return
+}
+func EncodeMsgWithdraw(bz []byte, lengthPrefixed bool) (bz2 []byte, err error) {
+	var o pot.MsgWithdraw
+	err = codec.UnmarshalJSON(bz, &o)
+	if err != nil {
+		return nil, err
+	}
+
+	if lengthPrefixed {
+		bz2, err = codec.MarshalBinaryLengthPrefixed(o)
+	} else {
+		bz2, err = codec.MarshalBinaryBare(o)
+	}
+
+	if err != nil {
+		return nil, err
+	}
+
+	return
+}
+func EncodeMsgFoundationDeposit(bz []byte, lengthPrefixed bool) (bz2 []byte, err error) {
+	var o pot.MsgFoundationDeposit
+	err = codec.UnmarshalJSON(bz, &o)
+	if err != nil {
+		return nil, err
+	}
+
+	if lengthPrefixed {
+		bz2, err = codec.MarshalBinaryLengthPrefixed(o)
+	} else {
+		bz2, err = codec.MarshalBinaryBare(o)
+	}
+
+	if err != nil {
+		return nil, err
+	}
+
+	return
+}
+//sds
+func EncodeMsgFileUpload(bz []byte, lengthPrefixed bool) (bz2 []byte, err error) {
+	var o sds.MsgFileUpload
+	err = codec.UnmarshalJSON(bz, &o)
+	if err != nil {
+		return nil, err
+	}
+
+	if lengthPrefixed {
+		bz2, err = codec.MarshalBinaryLengthPrefixed(o)
+	} else {
+		bz2, err = codec.MarshalBinaryBare(o)
+	}
+
+	if err != nil {
+		return nil, err
+	}
+
+	return
+}
+func EncodeMsgPrepay(bz []byte, lengthPrefixed bool) (bz2 []byte, err error) {
+	var o sds.MsgPrepay
+	err = codec.UnmarshalJSON(bz, &o)
+	if err != nil {
+		return nil, err
+	}
+
+	if lengthPrefixed {
+		bz2, err = codec.MarshalBinaryLengthPrefixed(o)
+	} else {
+		bz2, err = codec.MarshalBinaryBare(o)
+	}
+
+	if err != nil {
+		return nil, err
+	}
+
+	return
+}
+
+
+
+
+
+
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////
 func EncodeMultiStoreProofOp(bz []byte, lengthPrefixed bool) (bz2 []byte, err error) {
 	var o rootmulti.MultiStoreProofOp
 	err = codec.UnmarshalJSON(bz, &o)

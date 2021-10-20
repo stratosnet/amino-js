@@ -1,2 +1,5 @@
 dist/
 types/
+go/js/vendor
+go/lib/vendor
+go/src/vendor
